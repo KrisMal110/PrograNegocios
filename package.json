@@ -1,7 +1,7 @@
 {
   "name": "progranegocios",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,9 +9,14 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "prepare": "husky install",
-    "pre-commit": "npm run lint && tsc -b"
+    "pre-commit": "npm run lint && tsc -b",
+    "release": "standard-version"
   },
   "dependencies": {
+    "cli": "^1.0.1",
+    "commitlint": "^19.8.1",
+    "config": "^4.0.0",
+    "conventional": "^0.2.9",
     "eslint-js": "^0.0.1-security",
     "eslint-plugin-react": "^7.37.5",
     "eslint-ts": "^0.0.0-empty",
@@ -20,10 +25,11 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "reat": "^0.0.1-security",
-    "standard": "^17.1.2",
     "version": "^0.1.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
@@ -32,8 +38,13 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "standard-version": "^9.5.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "author": "",
+  "license": "ISC"
 }
